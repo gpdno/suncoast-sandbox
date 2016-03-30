@@ -1,2 +1,100 @@
 <% provide(:about, "active") %>
-<h1>about</h1>
+<section class="section-title">
+<div class="container">
+  <h1>About<small> Who Are We ?</small></h1>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><%= link_to "Home", root_path %></li>
+        <li class="active">About</li>
+      </ol>
+    </div>
+    
+  </div>
+  <div class="row">
+     <div class="animated fadeIn">
+    <div class="col-md-5">
+        <%= image_tag "puzzle.jpg", class: "img-responsive" %>
+    </div>
+    <div class="col-md-7">
+      <h2>Welcome to our company</h2>
+      <p>SunCoast Design and Engineering was started by two mechanical engineers, who believe in thinking outside 
+      of the box to solve everyday problems.  With over 30 years of combined design and engineering experience, 
+      we love solving problems that most people ignore.  Our great passion for engineering design, problem solving 
+      and overcoming challenges is what inspires us.</p>
+
+    <p>Not only do we enjoy the challenge of solving these problems, we also like to help others bring their 
+    ideas to production.  We believe that there are people out there coming up with creative solutions everyday 
+    but lack the ability to bring them to reality.  We want to help get those ideas out of the shadows and into the market.<p>
+
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-12">
+      <h2 class="page-header">Meet The Team</h2>
+    </div>
+  <div class="row">
+    <div class="col-md-1" >
+    </div>
+    <div class="col-md-4">
+        <%= image_tag "man2.jpg", class: "img-responsive img-thumbnail img-circle" %>
+        <h3>Justin Holland <p><small>Engineer</small></p></h3>
+        <p>Justin is a Mechanical Engineer who's experience ranges from designing engine components for amateur race 
+            cars to plastic injection consumer products. </p>
+        <ul class="list-unstyled list-inline list-social-icons">
+          <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+          <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+          <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+        </ul>
+    </div>
+    
+    <div class="col-md-2" >
+    </div>
+    
+    <div class="col-md-4">
+        <%= image_tag "man1.jpg", class: "img-responsive img-thumbnail img-circle" %>
+        <h3>Gregory DeNinno <p><small>Engineer/Developer</small></p></h3>
+        <p>Greg has over 25 years of Engineering experience, with extensive 3D CAD modeling. 
+            Most of his design experience has been in new product development.</p>
+        <ul class="list-unstyled list-inline list-social-icons">
+          <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+          <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+          <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <div class="col-md-1" >
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-lg-12">
+      <h2 class="page-header">Our Clients</h2>
+    </div>
+
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <%= image_tag "VieTagz-Logo.png", class: "img-responsive img-customer" %>
+    </div>
+
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <%= image_tag "docknlock.png", class: "img-responsive img-customer" %>
+    </div>
+
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <%= image_tag "helixmix.jpg", class: "img-responsive img-customer" %>
+    </div>
+
+
+
+      </div>
+    </div>
+  </section>
