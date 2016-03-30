@@ -1,2 +1,104 @@
 <% provide(:home, "active") %>
-<h1>home page</h1>
+<section class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="animated fadeInLeft">
+          <h1>SunCoast Design &amp; Engineering</h1><hr>
+          <p class="lead">Tomorrow's products start with your ideas. Our company specializes in helping inventors, start ups, and small companies bring their products to market. Click below to find out how we can bring your ideas to life.</p>
+          <%= link_to 'Find Out More', services_path, class: "btn btn-lg btn-primary" %>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="animated fadeInUp">
+        <%= image_tag "mainlogo.png" %>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<section class="section-gray">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 text-center">
+         <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-circle fa-stack-2x fa-color"></i>
+          <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>Design</h3>
+      </div>
+      <div class="col-md-3 col-sm-3 text-center">
+         <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-circle fa-stack-2x fa-color"></i>
+          <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>Services</h3>
+      </div>
+      <div class="col-md-3 col-sm-3 text-center">
+        <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-circle fa-stack-2x fa-color"></i>
+          <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>Media</h3>
+      </div>
+      <div class="col-md-3 col-sm-3 text-center">
+         <span class="fa-stack fa-lg fa-4x">
+          <i class="fa fa-circle fa-stack-2x fa-color"></i>
+          <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>Contact</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-secondary slogan">
+  <h1>Take A Closer Look</h1>
+  <p>We believe people come up with creative solutions everyday but lack the knowladge to bring them to reality. We help people bring these ideas to life.  </p>
+  <%= link_to "More Info", about_path, class: "btn btn-lg btn-default" %>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="wow fadeInLeft">
+        <h2 class="page-header">Our Services Includes...</h2>
+        <ul class="feature-list">
+          <li><i class="glyphicon glyphicon-ok"></i> Computer-Aided Desing (CAD)</li>
+          <li><i class="glyphicon glyphicon-ok"></i> Product Development</li>
+          <li><i class="glyphicon glyphicon-ok"></i> Functional Prototypes</li>
+          <li><i class="glyphicon glyphicon-ok"></i> Photrealistic Annimations and Images</li>
+        </ul>
+      </div>
+      </div>
+      <div class="col-md-6">
+        <div class="wow fadeInRight">
+          <%= image_tag "macbook.png", class: "img-responsive" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wow fadeIn">
+  <section class="section-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <%= image_tag "sample1", class: "img-circle img-responsive" %>
+        </div>
+        <div class="col-md-6">
+          <h2 class="page-header">More Services Include...</h2>
+          <ul class="feature-list">
+            <li><i class="glyphicon glyphicon-ok"></i> Patent Searchs</li>
+            <li><i class="glyphicon glyphicon-ok"></i> Mobile Responsive Web Design</li>
+            <li><i class="glyphicon glyphicon-ok"></i> Distribution &amp; Fullfilment</li>
+            <li><i class="glyphicon glyphicon-ok"></i> Munufacturing Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
