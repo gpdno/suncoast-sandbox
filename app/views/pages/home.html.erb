@@ -20,34 +20,42 @@
     
 <section class="section-gray">
   <div class="container">
-    <div class="row">
-        <div class="col-md-3 col-sm-3 text-center">
-         <span class="fa-stack fa-lg fa-4x">
-          <i class="fa fa-circle fa-stack-2x fa-color"></i>
-          <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+    <div class="row icon-text">
+      <div class="col-md-3 col-sm-3 text-center">
+        <%= link_to services_path, :class => 'btn' do %>
+        <span class="fa-stack fa-lg fa-4x">
+        <i class="fa fa-circle fa-stack-2x fa-color"></i>
+        <i class="fa fa-laptop fa-stack-1x fa-inverse"> </i>
         </span>
         <h3>Design</h3>
+        <% end %>
       </div>
       <div class="col-md-3 col-sm-3 text-center">
-         <span class="fa-stack fa-lg fa-4x">
-          <i class="fa fa-circle fa-stack-2x fa-color"></i>
-          <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+        <%= link_to services_path, :class => 'btn' do %>
+        <span class="fa-stack fa-lg fa-4x">
+        <i class="fa fa-circle fa-stack-2x fa-color"></i>
+        <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
         </span>
         <h3>Services</h3>
+        <% end %>
       </div>
       <div class="col-md-3 col-sm-3 text-center">
+        <%= link_to "", :class => 'btn' do %>
         <span class="fa-stack fa-lg fa-4x">
-          <i class="fa fa-circle fa-stack-2x fa-color"></i>
-          <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+        <i class="fa fa-circle fa-stack-2x fa-color"></i>
+        <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
         </span>
         <h3>Media</h3>
+        <% end %>
       </div>
       <div class="col-md-3 col-sm-3 text-center">
-         <span class="fa-stack fa-lg fa-4x">
-          <i class="fa fa-circle fa-stack-2x fa-color"></i>
-          <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+        <%= link_to contact_path, :class => 'btn' do %>
+        <span class="fa-stack fa-lg fa-4x">
+        <i class="fa fa-circle fa-stack-2x fa-color"></i>
+        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
         </span>
         <h3>Contact</h3>
+        <% end %>
       </div>
     </div>
   </div>
