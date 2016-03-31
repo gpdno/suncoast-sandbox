@@ -1,0 +1,32 @@
+<% provide(:engineer, "active") %>
+
+<%= render 'title' %>
+
+<section>
+    <div class="container">
+      <div class="animated fadeIn">
+        
+        <%= render 'top' %>
+
+            <div class="row">
+                <div role="tabpanel">
+                
+                    <%= render 'tabs' %>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                    
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <i class="fa fa-cogs pull-left fa-4x"></i>
+                            <p>Engineering Services</p>
+                            <p>ursus urna sit amet metus porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
+                        
+                    </div>
+                
+                </div>
+            </div>
+
+        <%= render 'images1' %>
+    </div>
+  </div>
+</section>

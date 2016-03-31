@@ -2,17 +2,17 @@
 <section class="jumbotron">
   <div class="container">
     <div class="row">
+      <div class="col-md-5">
+        <div class="animated fadeInUp">
+        <%= image_tag "mainlogo.png", class: "img-responsive-logo" %>
+        </div>
+      </div>
       <div class="col-md-7">
         <div class="animated fadeInLeft">
           <h1>SunCoast Design &amp; Engineering</h1><hr>
           <p class="lead">Tomorrow's products start with your ideas. Our company specializes in helping inventors, start ups, and small companies bring their products to market. Click below to find out how we can bring your ideas to life.</p>
-          <%= link_to 'Find Out More', services_path, class: "btn btn-lg btn-primary" %>
+          <%= link_to 'Find Out More', services_engineer_path, class: "btn btn-lg btn-primary" %>
         </div>
-      </div>
-      <div class="col-md-5">
-        <div class="animated fadeInUp">
-        <%= image_tag "mainlogo.png" %>
-      </div>
       </div>
     </div>
   </div>
@@ -22,21 +22,21 @@
   <div class="container">
     <div class="row icon-text">
       <div class="col-md-3 col-sm-3 text-center">
-        <%= link_to services_path, :class => 'btn' do %>
+        <%= link_to services_engineer_path, :class => 'btn' do %>
         <span class="fa-stack fa-lg fa-4x">
         <i class="fa fa-circle fa-stack-2x fa-color"></i>
-        <i class="fa fa-laptop fa-stack-1x fa-inverse"> </i>
+        <i class="fa fa-cogs fa-stack-1x fa-inverse"> </i>
         </span>
-        <h3>Design</h3>
+        <h3>Services</h3>
         <% end %>
       </div>
       <div class="col-md-3 col-sm-3 text-center">
-        <%= link_to services_path, :class => 'btn' do %>
+        <%= link_to services_engineer_path, :class => 'btn' do %>
         <span class="fa-stack fa-lg fa-4x">
         <i class="fa fa-circle fa-stack-2x fa-color"></i>
-        <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
         </span>
-        <h3>Services</h3>
+        <h3>Login</h3>
         <% end %>
       </div>
       <div class="col-md-3 col-sm-3 text-center">
