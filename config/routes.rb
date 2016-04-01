@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get '/home', to: 'pages#home'
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
+  get '/terms', to: 'pages#terms'
+  get '/privacy', to: 'pages#privacy'
   
    get '/services/engineer', to: 'services#engineer'
    get '/services/design', to: 'services#design'
