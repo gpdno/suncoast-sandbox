@@ -1,8 +1,8 @@
 <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="<%= yield(:engineer)%>">
-        <%= link_to "Engineering", services_engineer_path(anchor: "home") %></li>
     <li role="presentation" class="<%= yield(:design)%>">
         <%= link_to "Design", services_design_path(anchor: "home") %></li>
+    <li role="presentation" class="<%= yield(:engineer)%>">
+        <%= link_to "Engineering", services_engineer_path(anchor: "home") %></li>
     <li role="presentation" class="<%= yield(:prototype)%>">
         <%= link_to "Prototype", services_prototype_path(anchor: "home") %></li>
     <li role="presentation" class="<%= yield(:visualization)%>">
