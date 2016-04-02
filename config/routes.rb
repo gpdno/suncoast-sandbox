@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get '/services/prototype', to: 'services#prototype'
   get '/services/visualization', to: 'services#visualization'
 
-  get '/news/index', to: 'news#index'
+  resources :articles
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

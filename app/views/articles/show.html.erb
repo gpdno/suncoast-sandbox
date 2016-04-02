@@ -1,0 +1,18 @@
+<div class="container custom-blog-container">
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+            <div class="blog-post">
+                <h3 class="blog-post-title"><%= @article.title %></h3>
+                <p class="blog-post-meta"><small><%= @article.created_at.strftime("%a %b %d, %Y") %></small>
+                <p><%= simple_format(@article.description) %></p>
+            </div><!-- /.blog-post -->
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col col-sm-8">
+            <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-info" %>
+            <%= link_to "Article List", articles_path, class: "btn btn-primary" %>
+        </div>
+    </div>
+</div>
