@@ -33,8 +33,11 @@
     
     <div class="row">
         <div class="col col-sm-8">
+            <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
             <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-xs btn-info" %>
+            <% end %>
             <%= link_to "Article List", articles_path, class: "btn btn-xs btn-primary" %>
         </div>
     </div>
+    <hr>
 </div>
