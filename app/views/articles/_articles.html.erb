@@ -4,6 +4,7 @@
     <p class="blog-post-meta"><small><%= article.created_at.strftime("%a %b %d, %Y") %></small>
     by <%= article.user.username if article.user%></p>
     <p><%= truncate(simple_format(article.description), escape: false, length: 500) %></p>
+    <p><%= link_to 'More...', article_path(article) %> </p>
     
     <% if logged_in? && (current_user == article.user || current_user.admin?) %>
       <p><%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-info" %>&nbsp;
