@@ -1,32 +1,35 @@
 <% provide(:visualization, "active") %>
-
 <%= render 'title' %>
-
 <section>
     <div class="container">
-      <div class="animated fadeIn">
+        <div class="animated fadeIn">
         
-        <%= render 'top' %>
-
+            <%= render 'top' %>
+            
             <div class="row">
-                <div role="tabpanel">
-                
+                <div class="col-md-8">
+                    <div role="tabpanel">
+                    
                     <%= render 'tabs' %>
                     
                     <!-- Tab panes -->
-                    <div class="tab-content">
-                    
-                        <div role="tabpanel" class="tab-pane active" >
-                            <i class="fa fa-picture-o pull-left fa-4x"></i>
-                            <p>Visualization Services</p>
-                            <p>We offer Photorealistic product visualization and Product animations</p>
+                        <div class="tab-content">
                         
+                            <div role="tabpanel" class="tab-pane active" >
+                                <div class="col-md-1" id="icon">
+                                    <i class="fa fa-picture-o pull-left fa-3x"></i>
+                                </div>
+                                <div class="col-md-11" id="service">
+                                    <p><strong>Visualization Services</strong></p>
+                                    <p>We offer Photorealistic product visualization and Product animations</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
+            
+            <%= render 'vis_images' %>
             </div>
-
-        <%= render 'vis_images' %>
+        </div>
     </div>
-  </div>
 </section>

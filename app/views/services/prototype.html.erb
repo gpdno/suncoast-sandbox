@@ -1,33 +1,39 @@
 <% provide(:prototype, "active") %>
-
 <%= render 'title' %>
-
 <section>
     <div class="container">
-      <div class="animated fadeIn">
+        <div class="animated fadeIn">
         
-        <%= render 'top' %>
-
+            <%= render 'top' %>
+            
             <div class="row">
-                <div role="tabpanel">
-                
+                <div class="col-md-8">
+                    <div role="tabpanel">
+                    
                     <%= render 'tabs' %>
                     
                     <!-- Tab panes -->
-                    <div class="tab-content">
-                    
-                        <div role="tabpanel" class="tab-pane active" >
-                            <i class="fa fa-wrench pull-left fa-4x"></i>
-                            <p>Prototyping Services</p>
-                            <p>Form - Fit - Function.  We create physical prototypes that alow design verification and modifications
-                            before you commit capital for production</p>
+                        <div class="tab-content">
                         
+                            <div role="tabpanel" class="tab-pane active" >
+                                <div class="col-md-1" id="icon">
+                                   <i class="fa fa-wrench pull-left fa-4x"></i> 
+                                </div>
+                                <div class="col-md-11" id="service">
+                                    <p><strong>Prototyping Services</strong></p>
+                                    <p>Form - Fit - Function.  Prototypes of the design solution verify whether the design 
+                                    meets the original design challenges. Does it work? Does it solve the problem?  
+                                    We analyze and talk about what works, what doesn't and what could be improved.  
+                                    Creating physical prototypes alow design verification and modifications 
+                                    before commiting capital for production</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
+            
+            <%= render 'prototype_images' %>
             </div>
-
-        <%= render 'prototype_images' %>
+        </div>
     </div>
-  </div>
 </section>

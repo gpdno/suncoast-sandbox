@@ -1,33 +1,38 @@
 <% provide(:design, "active") %>
-
 <%= render 'title' %>
-
 <section>
     <div class="container">
-      <div class="animated fadeIn">
+        <div class="animated fadeIn">
         
-        <%= render 'top' %>
-
+            <%= render 'top' %>
+            
             <div class="row">
-                <div role="tabpanel">
-                
+                <div class="col-md-8">
+                    <div role="tabpanel">
+                    
                     <%= render 'tabs' %>
                     
                     <!-- Tab panes -->
-                    <div class="tab-content">
-                    
-                        <div role="tabpanel" class="tab-pane active" >
-                            <i class="fa fa-lightbulb-o pull-left fa-4x"></i>
-                            <p>Design Services</p>
-                            <p>ursus urna sit amet metus porttitor, in pharetra quam feugiat. 
-                            Etiam tempus euismod nulla eget pellentesque.</p>
+                        <div class="tab-content">
                         
+                            <div role="tabpanel" class="tab-pane active" >
+                                <div class="col-md-1" id="icon">
+                                    <i class="fa fa-lightbulb-o pull-left fa-4x"></i>
+                                </div>
+                                <div class="col-md-11" id="service">
+                                    <p><strong>Design Services</strong></p>
+                                    <p>We work as a team to develop as many solutions as possible, encourage wild ideas.  Remember, 
+                                    NO idea is a bad idea. Our ideas build and grow from each other.  Our goal is to pick 
+                                    two or three of the best ideas and run with them on towards a design.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
+            
+            <%= render 'design_images' %>
             </div>
-
-        <%= render 'design_images' %>
+        </div>
     </div>
-  </div>
 </section>

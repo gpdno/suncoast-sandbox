@@ -1,33 +1,36 @@
 <% provide(:engineer, "active") %>
-
 <%= render 'title' %>
-
 <section>
     <div class="container">
-      <div class="animated fadeIn">
+        <div class="animated fadeIn">
         
-        <%= render 'top' %>
-
+            <%= render 'top' %>
+            
             <div class="row">
-                <div role="tabpanel">
-                
+                <div class="col-md-8">
+                    <div role="tabpanel">
+                    
                     <%= render 'tabs' %>
                     
                     <!-- Tab panes -->
-                    <div class="tab-content">
-                    
-                        <div role="tabpanel" class="tab-pane active">
-                            <i class="fa fa-cogs pull-left fa-4x"></i>
-                            <p>Engineering Services</p>
-                            <p>ursus urna sit amet metus porttitor, in pharetra quam feugiat. 
-                            Etiam tempus euismod nulla eget pellentesque.</p>
+                        <div class="tab-content">
                         
+                            <div role="tabpanel" class="tab-pane active" >
+                                <div class="col-md-1" id="icon">
+                                    <i class="fa fa-cogs pull-left fa-3x"></i>
+                                </div>
+                                <div class="col-md-11" id="service">
+                                    <p><strong>Engineering Services</strong></p>
+                                    <p>We use sketches, drawings and CAD models to help plan and visualized the ideas.  
+                                    We make choices and decisions based on calculations, materials and manufacturing processes.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
+            
+            <%= render 'engineer_images' %>
             </div>
-
-        <%= render 'engineer_images' %>
+        </div>
     </div>
-  </div>
 </section>
