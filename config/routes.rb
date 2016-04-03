@@ -18,6 +18,10 @@ Rails.application.routes.draw do
   get '/services/visualization', to: 'services#visualization'
 
   resources :articles
+  
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

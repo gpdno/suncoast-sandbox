@@ -1,9 +1,31 @@
+<% provide(:news, "active") %>
+<section class="section-title">
+    <div class="container">
+      <h1>Media<small> What's going on?</small></h1>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Articles", articles_path %></li>
+            <li class="active">Media</li>
+          </ol>
+        </div>
+      </div>
+  </div>
+</section>
+
 <div class="container custom-blog-container">
     <div class="row">
         <div class="col-sm-8 blog-main">
             <div class="blog-post">
                 <h3 class="blog-post-title"><%= @article.title %></h3>
                 <p class="blog-post-meta"><small><%= @article.created_at.strftime("%a %b %d, %Y") %></small>
+                by <%= @article.user.username if @article.user%></p>
                 <p><%= simple_format(@article.description) %></p>
             </div><!-- /.blog-post -->
         </div>
@@ -11,8 +33,8 @@
     
     <div class="row">
         <div class="col col-sm-8">
-            <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-info" %>
-            <%= link_to "Article List", articles_path, class: "btn btn-primary" %>
+            <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-xs btn-info" %>
+            <%= link_to "Article List", articles_path, class: "btn btn-xs btn-primary" %>
         </div>
     </div>
 </div>

@@ -22,8 +22,9 @@
   <div class="container custom-blog-container">
     <div class="row">
       <div class="col-sm-8 blog-main">
-      <h2>Listing all articles</h2>
-      <%= link_to "New article", new_article_path, class: "btn btn-primary" %>
+      <h3>The lastest news and information</h3>
+      <%= link_to "New article", new_article_path, class: "btn btn-xs btn-primary" %>
+      <%= link_to 'Log out', logout_path, method: :delete, class: "btn btn-xs btn-danger"%>
       <hr>
       
       <%= render 'articles', obj: @articles %>
