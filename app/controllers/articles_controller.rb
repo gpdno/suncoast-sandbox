@@ -46,10 +46,6 @@ class ArticlesController <ApplicationController
     redirect_to articles_path
   end
   
-  def faq
-    
-  end
-  
   private
   
     def set_article

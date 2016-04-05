@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
   get '/terms', to: 'pages#terms'
   get '/privacy', to: 'pages#privacy'
+  get '/faq', to: 'pages#faq'
   
   get '/services/engineer', to: 'services#engineer'
   get '/services/design', to: 'services#design'
@@ -18,7 +19,7 @@ Rails.application.routes.draw do
   get '/services/visualization', to: 'services#visualization'
 
   resources :articles
-  get '/faq', to: 'articles#faq'
+
   
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
