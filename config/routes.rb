@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/services/visualization', to: 'services#visualization'
 
   resources :articles
+  get '/faq', to: 'articles#faq'
   
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'

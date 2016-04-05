@@ -24,21 +24,21 @@
   <div class="container">
     <div class="row icon-text">
       <div class="col-md-3 col-sm-3 text-center">
+        <%= link_to about_path, :class => 'btn' do %>
+        <span class="fa-stack fa-lg fa-4x">
+        <i class="fa fa-circle fa-stack-2x fa-color"></i>
+        <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>About us</h3>
+        <% end %>
+      </div>
+      <div class="col-md-3 col-sm-3 text-center">
         <%= link_to services_engineer_path, :class => 'btn' do %>
         <span class="fa-stack fa-lg fa-4x">
         <i class="fa fa-circle fa-stack-2x fa-color"></i>
         <i class="fa fa-cogs fa-stack-1x fa-inverse"> </i>
         </span>
         <h3>Services</h3>
-        <% end %>
-      </div>
-      <div class="col-md-3 col-sm-3 text-center">
-        <%= link_to "", :class => 'btn' do %>
-        <span class="fa-stack fa-lg fa-4x">
-        <i class="fa fa-circle fa-stack-2x fa-color"></i>
-        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-        </span>
-        <h3>Login</h3>
         <% end %>
       </div>
       <div class="col-md-3 col-sm-3 text-center">
@@ -65,7 +65,7 @@
 
 <section class="section-secondary slogan">
   <h1>Take A Closer Look</h1>
-  <p>We believe people come up with creative solutions everyday but lack the knowledge to bring them to reality. We help people bring these ideas to life.  </p>
+  <p>We believe people come up with creative solutions everyday but lack the expertise to bring them to reality. We help people bring these ideas to life.  </p>
   <%= link_to "More Info", about_path, class: "btn btn-lg btn-default" %>
 </section>
 
