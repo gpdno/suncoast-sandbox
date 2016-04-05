@@ -3,9 +3,14 @@
 
   <div class="sidebar-module">
     <h4>Archives</h4>
-    <ol class="list-unstyled">
-      <li><%= link_to "April 2016", articles_path %></li>
-    </ol>
+      <% @articles_by_month.each do |month_field, articles| %>
+        <h3="month-archive"><%= month_field.strftime('%B %Y') %></h3>
+        <ul class="archive-list">
+           <% articles.each do |article| %>
+          <li><%= link_to article.title, article_path(article) %></li>
+          <% end %>
+        </ul>
+      <% end %>
   </div>
   <div class="sidebar-module">
     <h4>Elsewhere</h4>

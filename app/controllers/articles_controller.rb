@@ -32,7 +32,8 @@ class ArticlesController <ApplicationController
   end
   
   def index
-    @articles = Article.all.reverse
+    @articles = Article.order(created_at: :desc)
+    @articles_by_month = @articles.group_by { |t| t.created_at.beginning_of_month }
   end
   
   def show
