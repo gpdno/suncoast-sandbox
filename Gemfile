@@ -31,8 +31,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
-# Use Unicorn as the app server
-# gem 'unicorn'
+# Use puma as the app server
+gem 'puma', '~> 3.4'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
