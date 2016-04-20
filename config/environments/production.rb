@@ -12,7 +12,7 @@ Rails.application.configure do
   
   #Sendgrid config code
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => 'suncoastde.herokuapp.com//', :protocol => 'https' }
+  config.action_mailer.default_url_options = { :host => 'suncoastde-sandbox.herokuapp.com//', :protocol => 'https' }
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
